@@ -8,6 +8,7 @@ import styles from "./index.module.scss";
 import SteamAPI from "steamapi";
 import { GameDetail } from "../types";
 import Particles from "react-particles-js";
+import ParticlesBG from "../components/ParticlesBG";
 
 export async function getStaticProps(ctx: GetStaticPropsContext) {
   const { STEAM_WEB_KEY } = process.env;
@@ -45,49 +46,7 @@ function GameCard({ game }: { game: GameDetail }) {
 export default function Home({ games }: HomeProps) {
   return (
     <>
-      <Particles
-        params={{
-          move: {
-            speed: 1,
-            out_mode: "out",
-          },
-          particles: {
-            line_linked: {
-              enable: false,
-            },
-            shape: {
-              type: "image",
-              image: [
-                {
-                  src: "/paw.png",
-                  height: 20,
-                  width: 20,
-                },
-                {
-                  src: "/peach.png",
-                  height: 20,
-                  width: 20,
-                },
-              ],
-            },
-            color: {
-              value: "#CCC",
-            },
-            size: {
-              value: 30,
-              random: true,
-              anim: {
-                enable: true,
-                speed: 4,
-                size_min: 10,
-                sync: false,
-              },
-            },
-          },
-          retina_detect: false,
-        }}
-        className={styles.Background}
-      />
+      <ParticlesBG />
       <div className={styles.Content}>
         <img className={styles.Header} src="https://i.imgur.com/D00VVbQ.png" />
         <h2>
