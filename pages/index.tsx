@@ -7,7 +7,7 @@ import styles from './index.module.scss';
 import SteamAPI from 'steamapi';
 import { GameDescriptor, GameDetail } from '../types';
 import ParticlesBG from '../components/ParticlesBG';
-import { GameCard } from './GameCard';
+import { GameCard } from '../components/GameCard';
 import useWinner from '../hooks/use-winner';
 import { useCallback, useMemo } from 'react';
 import useMyVote from '../hooks/use-my-vote';
