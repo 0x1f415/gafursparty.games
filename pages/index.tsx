@@ -1,5 +1,4 @@
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
-import head from "next/head";
 
 import ownedGames from "../games.json";
 
@@ -9,6 +8,7 @@ import SteamAPI from "steamapi";
 import { GameDetail } from "../types";
 import Particles from "react-particles-js";
 import ParticlesBG from "../components/ParticlesBG";
+import { GameCard } from "./GameCard";
 
 export async function getStaticProps(ctx: GetStaticPropsContext) {
   const { STEAM_WEB_KEY } = process.env;
@@ -34,15 +34,6 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
 
 type HomeProps = InferGetStaticPropsType<typeof getStaticProps>;
 
-function GameCard({ game }: { game: GameDetail }) {
-  return (
-    <div className={styles.GameCard}>
-      <img className={styles.GameImage} src={game.header_image} />
-      <span className={styles.GameName}>{game.name}</span>
-    </div>
-  );
-}
-
 export default function Home({ games }: HomeProps) {
   return (
     <>
@@ -54,13 +45,11 @@ export default function Home({ games }: HomeProps) {
         </h2>
         <h2 style={{ color: "red" }}>This page is a work in progress!</h2>
         <h2>Game Menu</h2>
-        <ul className={styles.GameList}>
+        <div className={styles.GameList}>
           {Object.entries(games).map(([appId, gameData]) => (
-            <li key={appId}>
-              <GameCard game={gameData} />
-            </li>
+            <GameCard key={appId} game={gameData} />
           ))}
-        </ul>
+        </div>
       </div>
     </>
   );
