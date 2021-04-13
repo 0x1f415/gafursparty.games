@@ -78,10 +78,7 @@ export default function Home({ games }: HomeProps) {
 		<>
 			<ParticlesBG />
 			<div className={styles.Content}>
-				<img
-					className={styles.Header}
-					src="https://i.imgur.com/D00VVbQ.png"
-				/>
+				<h1 className={styles.Header}>Party Game Night!</h1>
 				{winner && (
 					<>
 						<h2>Winner of current vote:</h2>
@@ -118,7 +115,7 @@ export default function Home({ games }: HomeProps) {
 						)}
 					</>
 				)}
-				<h2>Game Menu</h2>
+				<h2 className={styles.AvailableGames}>Available Games</h2>
 				<div className={styles.GameList}>
 					{Object.entries(games).map(([appId, gameData]) => (
 						<GameCard

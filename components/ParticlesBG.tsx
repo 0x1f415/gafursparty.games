@@ -8,10 +8,13 @@ export default function ParticlesBG() {
 		<Particles
 			params={{
 				move: {
-					speed: 1,
+					speed: 0.5,
 					out_mode: 'out'
 				},
 				particles: {
+					number: {
+						value: 7
+					},
 					line_linked: {
 						enable: false
 					},
@@ -38,7 +41,7 @@ export default function ParticlesBG() {
 						random: false
 					},
 					opacity: {
-						value: 0.5,
+						value: 0.1,
 						anim: {
 							enable: false
 						}
