@@ -32,6 +32,7 @@
 		"react-particles-js": "^3.4.1",
 		"react-query": "^3.13.6",
 		"sass": "^1.32.8",
+		"smoothscroll-polyfill": "^0.4.4",
 		"steamapi": "^2.1.2"
 	},
 	"devDependencies": {
