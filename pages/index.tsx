@@ -81,7 +81,7 @@ export default function Home({ games, absoluteUrl }: HomeProps) {
 					muted
 					playsInline
 					controls={false}
-					disablePictureInPicture
+					disablePictureInPicture={true}
 					className={styles.ScaryBackground}
 				>
 					<source src="/background.mp4" />
