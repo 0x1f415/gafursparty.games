@@ -73,7 +73,11 @@ export default function Home({ games, absoluteUrl }: HomeProps) {
 				}}
 			/>
 			<VoteContext.Provider value={{ games: games as any }}>
-				<ParticlesBG />
+				{/* <ParticlesBG /> */}
+
+				<video className={styles.ScaryBackground} muted autoPlay>
+					<source src="/background.mp4" />
+				</video>
 				<div className={styles.Content}>
 					<h1 className={styles.Header}>Party Game Night!</h1>
 					<div className={styles.VoteSection}>
