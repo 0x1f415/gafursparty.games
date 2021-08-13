@@ -13,6 +13,16 @@
 	src: url('/DirtyRoma.otf') format('opentype');
 }
 
+@font-face {
+	font-family: 'Friday 13th';
+	src: url('/Friday13.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Creepy Crawlers';
+	src: url('/CreepyCrawlersExpand.ttf') format('truetype');
+}
+
 body,
 html {
 	background-color: #050505;
