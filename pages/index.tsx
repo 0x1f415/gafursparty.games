@@ -1,13 +1,10 @@
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 
-import ownedGames from '../games.json';
 import gameOrder from '../gameorder.json';
 
 import styles from './index.module.scss';
 
-import SteamAPI from 'steamapi';
 import Image from 'next/image';
-import { GameDescriptor, GameDetail } from '../types';
 import ParticlesBG from '../components/ParticlesBG';
 import { GameCard } from '../components/GameCard';
 import VoteContext from '../contexts/VoteContext';
@@ -16,6 +13,7 @@ import MyVote from '../components/MyVote';
 import VoteExpiration from '../components/Expiration';
 import React from 'react';
 import { NextSeo } from 'next-seo';
+import getGames from '../functions/getGames';
 
 export async function getStaticProps(ctx: GetStaticPropsContext) {
 	const { VERCEL_URL } = process.env;
@@ -23,33 +21,7 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
 		? `https://${VERCEL_URL}`
 		: 'http://localhost:3000';
 
-	const { STEAM_WEB_KEY } = process.env;
-
-	if (!STEAM_WEB_KEY)
-		throw new Error('Please add a STEAM_WEB_KEY environment variable');
-
-	const steam = new SteamAPI(STEAM_WEB_KEY);
-
-	const gameDetails = await await Promise.all(
-		ownedGames.map(metadata =>
-			(steam.getGameDetails(metadata.appId) as Promise<GameDetail>).then(
-				steamInfo => ({
-					steamInfo,
-					metadata
-				})
-			)
-		)
-	);
-
-	const games = gameDetails.reduce(
-		(map, game) => ({ ...map, [game.steamInfo.steam_appid]: game }),
-		{} as {
-			[key: string]: {
-				steamInfo: GameDetail;
-				metadata: typeof ownedGames[0];
-			};
-		}
-	);
+	const games = await getGames();
 
 	return { props: { games, absoluteUrl } };
 }

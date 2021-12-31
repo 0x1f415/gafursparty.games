@@ -13,6 +13,11 @@
 	src: url('/DirtyRoma.otf') format('opentype');
 }
 
+@font-face {
+	font-family: 'TS Block Bold';
+	src: url('/TSBlockBold.ttf') format('truetype');
+}
+
 body,
 html {
 	background-color: #050505;
