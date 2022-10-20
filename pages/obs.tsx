@@ -7,7 +7,6 @@ import styles from './obs.module.scss';
 
 export async function getStaticProps(ctx: GetStaticPropsContext) {
 	const games = await getGames();
-	console.log('games:', games);
 
 	return { props: { games } };
 }
