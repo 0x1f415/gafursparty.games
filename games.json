@@ -6,31 +6,46 @@
 				"name": "Quiplash 2",
 				"description": "The say-anything sequel. Play all new questions or make your own!",
 				"image": "/jb3/Quiplash2.jpg",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Trivia Murder Party",
 				"description": "A deadly quiz show where you match wits with a trivia-obsessed killer.",
 				"image": "/jb3/TriviaMurderParty.png",
-				"players": [1, 8]
+				"players": [
+					1,
+					8
+				]
 			},
 			{
 				"name": "Guesspionage",
 				"description": "The brain-battering data-mining guessing game.",
 				"image": "/jb3/Guesspionage.png",
-				"players": [2, 8]
+				"players": [
+					2,
+					8
+				]
 			},
 			{
 				"name": "Tee K.O.",
 				"description": "The t-shirt slugfest where you battle your custom t-shirts to the death!",
 				"image": "/jb3/TeeKO.png",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Fakin' It",
 				"description": "One of your friends has something to hide in this sneaky game for tricksters.",
 				"image": "/jb3/FakinIt.png",
-				"players": [3, 6]
+				"players": [
+					3,
+					6
+				]
 			}
 		]
 	},
@@ -42,31 +57,46 @@
 				"description": "The blanking fun sequel with all-new question types and the game mode Fibbage: Enough About You where you guess the weird facts about your friends.",
 				"image": "/jb4/Fibbage3.png",
 				"imageObjectPosition": "left",
-				"players": [2, 8]
+				"players": [
+					2,
+					8
+				]
 			},
 			{
 				"name": "Survive The Internet",
 				"image": "/jb4/SurviveTheInternet.jpg",
 				"description": "The web-based frame game where you twist your friends’ “online” comments in hilarious ways.",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Monster Seeking Monster",
 				"description": "The spooky date-a-thon where you message and date fellow monsters with special powers.",
 				"image": "/jb4/MonsterSeekingMonster.jpg",
-				"players": [3, 7]
+				"players": [
+					3,
+					7
+				]
 			},
 			{
 				"name": "Bracketeering",
 				"description": "The deranged debate match where you place smart bets on stupid arguments.",
 				"image": "/jb4/Bracketeering.jpg",
-				"players": [3, 16]
+				"players": [
+					3,
+					16
+				]
 			},
 			{
 				"name": "Civic Doodle",
 				"description": "The one-up art game where you compete to improve the town murals.",
 				"image": "/jb4/CivicDoodle.jpg",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			}
 		]
 	},
@@ -77,31 +107,46 @@
 				"name": "You Don't Know Jack: Full Stream",
 				"description": "The pop-culture trivia mash-up YOU DON’T KNOW JACK: Full Stream. The classic returns, full of wild new surprises.",
 				"image": "/jb5/YDNJ.png",
-				"players": [1, 8]
+				"players": [
+					1,
+					8
+				]
 			},
 			{
 				"name": "Split The Room",
 				"description": "The what-if game Split the Room. Create strange and divisive hypothetical situations.",
 				"image": "/jb5/SplitTheRoom.png",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Mad Verse City",
 				"description": "The lyric-writing game Mad Verse City. Channel your inner MC as a rap battling robot.",
 				"image": "/jb5/MadVerseCity.png",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Patently Stupid",
 				"description": "The competitive drawing game Patently Stupid. Create odd inventions to solve bizarre problems.",
 				"image": "/jb5/PatentlyStupid.png",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Zeeple Dome",
 				"description": "The deadliest game show in the Crab Nebula, Zeeple Dome! Fling yourself at bloodthirsty aliens to win millions of Zubabucks!",
 				"image": "/jb5/ZeepleDome.jpg",
-				"players": [1, 6]
+				"players": [
+					1,
+					6
+				]
 			}
 		]
 	},
@@ -112,31 +157,46 @@
 				"name": "Trivia Murder Party 2",
 				"description": "The popular trivia deathmatch Trivia Murder Party 2. Try to survive the bizarre new minigames.",
 				"image": "/jb6/TriviaMurderParty2.jpg",
-				"players": [1, 8]
+				"players": [
+					1,
+					8
+				]
 			},
 			{
 				"name": "Role Models",
 				"description": "The offbeat personality test Role Models. Find out who you really are. (Or at least what your friends think of you.)",
 				"image": "/jb6/RoleModels.jpg",
-				"players": [3, 6]
+				"players": [
+					3,
+					6
+				]
 			},
 			{
 				"name": "Joke Boat",
 				"description": "The comedy contest Joke Boat. Craft one-liners for a cruise ship talent show.",
 				"image": "/jb6/JokeBoat.jpg",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Dictionarium",
 				"description": "The weird word circus Dictionarium. May the funniest definition win.",
 				"image": "/jb6/Dictionarium.png",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Push The Button",
 				"description": "The hidden identity game Push The Button. Can you discover the aliens in time?",
 				"image": "/jb6/PushTheButton.jpg",
-				"players": [4, 10]
+				"players": [
+					4,
+					10
+				]
 			}
 		]
 	},
@@ -147,38 +207,51 @@
 				"name": "Quiplash 3",
 				"description": "It’s a head-to-head battle of the wits as you give hilarious responses to quirky prompts while everyone else votes for their favorite!",
 				"image": "/jb7/Quiplash3.jpg",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "The Devils and the Details",
 				"description": "You’re a family of devils working together to survive in suburbia. Can you handle the daily torture of human life?",
 				"image": "/jb7/DevilsAndTheDetails.jpg",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Champ'd Up",
 				"description": "Create absurd characters that will battle over unusual titles. Can you take down the heavy favorite?",
 				"image": "/jb7/ChampdUp.jpg",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Talking Points",
 				"description": "Speakers are given picture slides they’ve never seen before and words to read out loud that they didn’t write.",
 				"image": "/jb7/TalkingPoints.png",
-				"players": [3, 8]
+				"players": [
+					3,
+					8
+				]
 			},
 			{
 				"name": "Blather 'Round",
 				"description": "Describe your secret prompt with a very limited vocabulary and hope that someone can figure it out in time. It’s a “GOOD” “FUN TIME” “EXPERIENCE.”",
 				"image": "/jb7/BlatherRound.jpg",
-				"players": [2, 6]
+				"players": [
+					2,
+					6
+				]
 			}
 		]
 	},
-
 	{
 		"appId": "1552350",
-		"new": true,
 		"subGames": [
 			{
 				"name": "Drawful Animate",
@@ -207,9 +280,50 @@
 			}
 		]
 	},
-	{ "appId": "521350" },
-	{ "appId": "1495860" },
-	{ "appId": "1484730" },
-	{ "appId": "1234220" },
-	{ "appId": "945360" }
+	{
+		"appId": "1850960",
+		"new": true,
+		"subGames": [
+			{
+				"name": "Roomerang",
+				"description": "Channel your inner reality TV star in an attempt to come out on top! Respond to prompts, bring the competition and role-play to avoid being voted out.",
+				"image": "/jb9/roomerang.bmp"
+			},
+			{
+				"name": "Junktopia",
+				"description": "A strange wizard has turned you into a frog! Create hilarious backstories for weird objects and then get them appraised. The player with the most valuable items becomes human again!",
+				"image": "/jb9/junktopia.bmp"
+			},
+			{
+				"name": "Nonsensory",
+				"description": "Professor Nanners is here to test your NSP (Nonsensory Perception) in this drawing, writing, and guessing game! How close can you guess where another player's prompt ranks on the silliest of scales?",
+				"image": "/jb9/nonsensory.bmp"
+			},
+			{
+				"name": "Fibbage 4",
+				"description": "The hilarious bluffing party game returns with an all new Final Fibbage, video questions, fan-submitted questions, and Fibbage Enough About You mode!",
+				"image": "/jb9/fibbage-4.bmp"
+			},
+			{
+				"name": "Quixort",
+				"description": "In this trivia sorting factory, work with your team to sort falling answers into their proper order before they hit the floor! It's as easy as A, C, B!",
+				"image": "/jb9/quixort.bmp"
+			}
+		]
+	},
+	{
+		"appId": "521350"
+	},
+	{
+		"appId": "1495860"
+	},
+	{
+		"appId": "1484730"
+	},
+	{
+		"appId": "1234220"
+	},
+	{
+		"appId": "945360"
+	}
 ]
