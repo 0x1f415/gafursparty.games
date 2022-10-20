@@ -1,6 +1,7 @@
 import ormconfig from '../orm.config';
 
 import {
+	AnyEntity,
 	EntityName,
 	EntityRepository,
 	FilterQuery,
@@ -15,7 +16,7 @@ import {
 	FindOneOptions
 } from '@mikro-orm/core/drivers/IDatabaseDriver';
 
-export async function repoQuery<T, R>(
+export async function repoQuery<T extends AnyEntity<T>, R>(
 	entity: EntityName<T>,
 	query: (repo: EntityRepository<T>) => Promise<R>
 ): Promise<R> {
@@ -31,14 +32,14 @@ export async function repoQuery<T, R>(
 	return response;
 }
 
-export async function findAll<T, P extends Populate<T>>(
+export async function findAll<T extends AnyEntity<T>, P extends Populate<T>>(
 	entity: EntityName<T>,
 	options?: FindOptions<T, P>
 ) {
 	return repoQuery(entity, r => r.findAll(options));
 }
 
-export async function findOne<T, P extends Populate<T>>(
+export async function findOne<T extends AnyEntity<T>, P extends Populate<T>>(
 	entity: EntityName<T>,
 	where: FilterQuery<T>,
 	options?: FindOneOptions<T, P>,
@@ -47,7 +48,7 @@ export async function findOne<T, P extends Populate<T>>(
 	return repoQuery(entity, r => r.findOne(where, options, orderBy));
 }
 
-export async function mutate<T>(
+export async function mutate<T extends AnyEntity<T>>(
 	entity: EntityName<T>,
 	instance: T,
 	mutator: (ent: T) => void
@@ -58,7 +59,10 @@ export async function mutate<T>(
 	});
 }
 
-export async function findOneAndPersist<T, P extends Populate<T>>(
+export async function findOneAndPersist<
+	T extends AnyEntity<T>,
+	P extends Populate<T>
+>(
 	entity: EntityName<T>,
 	where: FilterQuery<T>,
 	options: FindOneOptions<T, P> | undefined,
