@@ -32,7 +32,7 @@ export default function Home({ games, absoluteUrl }: HomeProps) {
 	return (
 		<>
 			<NextSeo
-				title="Party Game Night!"
+				title="Party Game Night"
 				description="Voting for Jackbox and other party games!"
 				openGraph={{
 					images: [
@@ -46,7 +46,8 @@ export default function Home({ games, absoluteUrl }: HomeProps) {
 				}}
 			/>
 			<VoteContext.Provider value={{ games: games as any }}>
-				<ParticlesBG />
+				{/* <ParticlesBG /> */}
+				<video className={styles.HauntedHouseBG} src="/haunted-house.mp4" autoPlay muted loop />
 				<div className={styles.Content}>
 					<h1 className={styles.Header}>Party Game Night!</h1>
 					<div className={styles.VoteSection}>

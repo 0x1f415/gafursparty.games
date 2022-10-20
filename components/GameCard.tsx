@@ -5,6 +5,7 @@ import useMyVote from '../hooks/use-my-vote';
 import { useCallback } from 'react';
 import Image from 'next/image';
 import Starburst from './Starburst';
+import Pumpkin from './Pumpkin';
 
 export function GameCard({
 	game,
@@ -25,9 +26,9 @@ export function GameCard({
 	return (
 		<div className={styles.GameCard}>
 			{isNew && (
-				<Starburst className={styles.NewStarburst}>
+				<Pumpkin className={styles.NewStarburst}>
 					<p className={styles.StarburstText}>New!</p>
-				</Starburst>
+				</Pumpkin>
 			)}
 			<div
 				className={styles.MainGameInfo}

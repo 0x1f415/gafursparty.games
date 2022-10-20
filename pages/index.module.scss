@@ -1,15 +1,26 @@
-@keyframes rainbow {
-	0% {
-		background-position: 0% 82%;
-	}
+// @keyframes rainbow {
+// 	0% {
+// 		background-position: 0% 82%;
+// 	}
 
-	50% {
-		background-position: 100% 19%;
-	}
+// 	50% {
+// 		background-position: 100% 19%;
+// 	}
 
-	100% {
-		background-position: 0% 82%;
-	}
+// 	100% {
+// 		background-position: 0% 82%;
+// 	}
+// }
+
+.HauntedHouseBG {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	filter: brightness(15%) sepia(70%) hue-rotate(225deg) saturate(500%);
 }
 
 .Content {
@@ -26,24 +37,23 @@
 	transform: translateX(-50%);
 
 	.Header {
-		font-family: 'Another Danger';
+		font-family: 'Nightmare 5';
 		font-weight: normal;
-		background: linear-gradient(90deg, #ff0048, #00f2ff);
-		transform: rotate(-3deg);
-		margin-top: 30px;
-		margin-bottom: 30px;
+		// background: linear-gradient(90deg, #ff0048, #00f2ff);
+		// transform: rotate(-3deg);
+		margin: 30px;
 		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		font-size: 120px;
-		filter: drop-shadow(5px 5px #41023c);
-		animation: rainbow 18s ease infinite;
+		// -webkit-text-fill-color: transparent;
+		font-size: 150px;
+		// filter: drop-shadow(5px 5px #41023c);
+		// animation: rainbow 18s ease infinite;
 	}
 
 	.VoteSection {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
-		margin-top: 80px;
+		margin-top: 50px;
 		margin-bottom: 50px;
 		height: 260px;
 
@@ -58,7 +68,7 @@
 
 	.VoteExpiration {
 		font-size: 30px;
-		font-family: 'Dirty Roma';
+		font-family: 'Disturbia';
 
 		>p {
 			margin-bottom: 0.5em;
@@ -70,7 +80,7 @@
 			color: black;
 			padding: 5px 10px;
 			font-size: 25px;
-			font-family: 'Dirty Roma';
+			font-family: 'Disturbia';
 			border-radius: 5px;
 			cursor: pointer;
 
@@ -86,7 +96,7 @@
 
 	.AvailableGames {
 		margin-top: 0.5em;
-		font-family: 'Dirty Roma';
+		font-family: 'Disturbia';
 		font-size: 70px;
 		font-weight: normal;
 	}
@@ -134,7 +144,7 @@
 		.Header {
 			margin-top: 10px;
 			margin-bottom: 30px;
-			font-size: 11vw;
+			font-size: 20vw;
 		}
 
 		.VoteSection {
