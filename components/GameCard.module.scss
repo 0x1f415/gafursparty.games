@@ -2,6 +2,7 @@
 	from {
 		transform: translate(20%, -20%) rotate(-10deg);
 	}
+
 	to {
 		transform: translate(20%, -20%) rotate(10deg);
 	}
@@ -39,16 +40,18 @@
 			display: flex;
 			flex-direction: row;
 			text-align: center;
-			height: 120px;
+			height: 150px;
+
 			.GameImage {
 				position: relative;
 				width: 40%;
 			}
 
-			.TitleAndDev {
+			.GameInfo {
 				width: 100%;
 				display: flex;
 				flex-direction: column;
+
 				.GameName {
 					display: inline-flex;
 					align-items: center;
@@ -59,7 +62,7 @@
 					width: 100%;
 					font-size: 40px;
 					margin: 0;
-					flex: 1;
+					flex: 3;
 				}
 
 				.GameDeveloper {
@@ -81,17 +84,6 @@
 			position: relative;
 		}
 
-		.Info {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			flex: 1;
-
-			.GameDescription {
-				margin: 1em;
-			}
-		}
-
 		.GameHoverContent {
 			position: absolute;
 			width: 100%;
@@ -111,6 +103,7 @@
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
+
 				.Text {
 					font-family: 'Dirty Roma';
 					font-size: 50px;
@@ -124,6 +117,7 @@
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
+
 				.Text {
 					font-family: 'Dirty Roma';
 					font-size: 50px;
@@ -145,14 +139,14 @@
 			box-sizing: border-box;
 			position: relative;
 			display: flex;
-			height: 90px;
+			height: 120px;
 
 			&:active {
 				filter: brightness(50%);
 			}
 
 			.Image {
-				width: 40%;
+				width: 50%;
 				overflow: hidden;
 				position: relative;
 			}
@@ -193,6 +187,7 @@
 					display: inline-flex;
 					align-items: center;
 					justify-content: center;
+
 					.Text {
 						font-family: 'Dirty Roma';
 						font-size: 30px;
@@ -232,6 +227,7 @@
 		.Banner {
 			display: block !important;
 			height: auto !important;
+
 			.GameImage {
 				position: relative;
 				width: 100% !important;
@@ -239,16 +235,19 @@
 			}
 		}
 	}
+
 	.SubGames {
 		.SubGame {
 			width: 100% !important;
 			flex-direction: column;
 			height: auto !important;
+
 			.Image {
 				width: 100% !important;
 				height: 44vw !important;
 				overflow: visible !important;
 				position: relative;
+
 				img {
 					position: absolute !important;
 					width: 100% !important;

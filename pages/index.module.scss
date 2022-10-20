@@ -2,9 +2,11 @@
 	0% {
 		background-position: 0% 82%;
 	}
+
 	50% {
 		background-position: 100% 19%;
 	}
+
 	100% {
 		background-position: 0% 82%;
 	}
@@ -13,7 +15,7 @@
 .Content {
 	position: absolute;
 	margin: auto;
-	width: 1000px;
+	width: 1200px;
 	min-height: 100vh;
 	box-sizing: border-box;
 	padding: 10px;
@@ -43,9 +45,9 @@
 		width: 100%;
 		margin-top: 80px;
 		margin-bottom: 50px;
-		height: 220px;
+		height: 260px;
 
-		> div {
+		>div {
 			flex: 1;
 		}
 
@@ -58,7 +60,7 @@
 		font-size: 30px;
 		font-family: 'Dirty Roma';
 
-		> p {
+		>p {
 			margin-bottom: 0.5em;
 		}
 
@@ -94,6 +96,7 @@
 		display: flex;
 		flex-direction: row;
 		padding: 1em;
+
 		span {
 			flex: 1;
 			font-size: 20px;
@@ -103,6 +106,7 @@
 				position: relative;
 				display: inline-block;
 				vertical-align: middle;
+
 				&.Invert {
 					filter: invert(100%);
 				}
@@ -138,7 +142,7 @@
 			margin-top: 20px !important;
 			height: auto !important;
 
-			> div {
+			>div {
 				width: 100% !important;
 				height: 44vw !important;
 				box-sizing: border-box;
@@ -156,6 +160,7 @@
 		.Footer {
 			span {
 				font-size: 10px;
+
 				.FooterLogo {
 					height: 12px;
 				}

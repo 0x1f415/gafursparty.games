@@ -43,18 +43,18 @@ export function GameCard({
 							src={game.header_image}
 						/>
 					</div>
-					<div className={styles.TitleAndDev}>
+					<div className={styles.GameInfo}>
 						<h3 className={styles.GameName}>{game.name}</h3>
 						<h4 className={styles.GameDeveloper}>
 							{game.developers.join(', ')}
 						</h4>
+
+						<p className={styles.GameDescription}>
+							{game.short_description}
+						</p>
 					</div>
 				</div>
-				<div className={styles.Info}>
-					<p className={styles.GameDescription}>
-						{game.short_description}
-					</p>
-				</div>
+
 				<div className={styles.GameHoverContent}>
 					{subGames ? (
 						<div className={styles.PackDisclaimer}>
