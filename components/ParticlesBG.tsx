@@ -1,17 +1,27 @@
-import React from 'react';
-import Particles from 'react-particles-js';
+import React, { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+import type { Engine } from 'tsparticles-engine';
 
 import styles from './ParticlesBG.module.scss';
 
 export default function ParticlesBG() {
+	const particlesInit = useCallback(async (engine: Engine) => {
+		await loadFull(engine);
+	}, []);
+
 	return (
 		<Particles
-			params={{
-				move: {
-					speed: 0.5,
-					out_mode: 'out'
-				},
+			id="tsparticles"
+			init={particlesInit}
+			options={{
+				fpsLimit: 120,
 				particles: {
+					move: {
+						speed: 0.5,
+						out_mode: 'out',
+						enable: true
+					},
 					number: {
 						value: 7
 					},
@@ -46,8 +56,7 @@ export default function ParticlesBG() {
 							enable: false
 						}
 					}
-				},
-				retina_detect: false
+				}
 			}}
 			className={styles.ParticlesBG}
 		/>

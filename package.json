@@ -27,13 +27,12 @@
 		"dotenv": "^16.0.3",
 		"next": "^12.3.1",
 		"next-seo": "^5.8.0",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"react-particles-js": "^3.4.1",
 		"react-query": "^3.39.2",
+		"react-tsparticles": "^2.3.3",
 		"sass": "^1.55.0",
 		"smoothscroll-polyfill": "^0.4.4",
-		"steamapi": "^2.2.0"
+		"steamapi": "^2.2.0",
+		"tsparticles": "^2.3.4"
 	},
 	"devDependencies": {
 		"@mikro-orm/cli": "^4.5.3",
