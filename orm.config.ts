@@ -14,11 +14,7 @@ const appname = 'gafursparty-games';
 if (VERCEL) {
 	const { VERCEL_GIT_COMMIT_REF: branch, VERCEL_ENV: stage } = process.env;
 
-	const { DB_HOST: host, DB_USER: user, DB_PASSWORD: password } = process.env;
-
-	const { DB_PORT = '5432' } = process.env;
-
-	const port = parseInt(DB_PORT);
+	const { POSTGRES_URL: clientUrl } = process.env;
 
 	let dbName: string;
 	if (stage === 'production') dbName = `${appname}-production`;
@@ -26,15 +22,12 @@ if (VERCEL) {
 	else if (stage === 'development') dbName = `${appname}-dev-${branch}`;
 	else throw new Error(`Unrecognized vercel deployment stage ${stage}`);
 
-	connection = { host, port, user, password, dbName };
+	connection = { clientUrl, dbName };
 } else {
 	dotenv.config({ path: '.env.local' });
-	const { DB_USER, DB_PASSWORD } = process.env;
+	const { POSTGRES_URL: clientUrl } = process.env;
 	connection = {
-		host: 'localhost',
-		dbName: `${appname}-local`,
-		user: DB_USER,
-		password: DB_PASSWORD
+		clientUrl
 	};
 }
 
