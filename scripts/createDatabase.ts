@@ -14,7 +14,10 @@ async function main() {
 
 	const k = knex({
 		client: 'pg',
-		connection: POSTGRES_URL
+		connection: {
+			uri: POSTGRES_URL,
+			ssl: 'require'
+		}
 	});
 
 	const dbs = await k.raw(
