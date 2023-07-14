@@ -14,6 +14,7 @@ const appname = 'gafursparty-games';
 if (VERCEL) {
 	const { POSTGRES_URL } = process.env;
 
+	console.log('vercel detected, using ssl');
 	connection = {
 		clientUrl: POSTGRES_URL + '?sslmode=require'
 	};
