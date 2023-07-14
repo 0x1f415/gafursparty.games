@@ -6,19 +6,17 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 
 async function main() {
-	const { dbName, host } = connection;
+	const { POSTGRES_URL, POSTGRES_DATABASE: dbName } = process.env;
 
 	if (!dbName) throw new Error('Expected dbName in connection');
-
-	const { DB_ADMIN_USER, DB_ADMIN_PASSWORD } = process.env;
 
 	const k = knex({
 		client: 'pg',
 		connection: {
-			database: 'postgres',
-			host,
-			user: DB_ADMIN_USER,
-			password: DB_ADMIN_PASSWORD
+			connectionString: POSTGRES_URL,
+			ssl: {
+				rejectUnauthorized: false
+			}
 		}
 	});
 
