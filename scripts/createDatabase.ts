@@ -10,16 +10,11 @@ async function main() {
 
 	if (!dbName) throw new Error('Expected dbName in connection');
 
-	const { DB_ADMIN_USER, DB_ADMIN_PASSWORD } = process.env;
+	const { POSTGRES_URL } = process.env;
 
 	const k = knex({
 		client: 'pg',
-		connection: {
-			database: 'postgres',
-			host,
-			user: DB_ADMIN_USER,
-			password: DB_ADMIN_PASSWORD
-		}
+		connection: POSTGRES_URL
 	});
 
 	const dbs = await k.raw(
