@@ -14,7 +14,9 @@ async function main() {
 		client: 'pg',
 		connection: {
 			connectionString: POSTGRES_URL,
-			ssl: true
+			ssl: {
+				rejectUnauthorized: false
+			}
 		}
 	});
 
