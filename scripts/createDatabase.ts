@@ -6,14 +6,17 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 
 async function main() {
-	const { POSTGRES_URL } = process.env;
+	const { POSTGRES_URL, POSTGRES_DATABASE: dbName } = process.env;
+
+	if (!dbName) throw new Error('Expected dbName in connection');
 
 	const k = knex({
 		client: 'pg',
-		connection: POSTGRES_URL
+		connection: {
+			connectionString: POSTGRES_URL,
+			ssl: true
+		}
 	});
-
-	const { database: dbName } = k.client.connectionSettings;
 
 	const dbs = await k.raw(
 		`SELECT * from pg_database WHERE datname = '${dbName}';`
