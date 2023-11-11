@@ -282,7 +282,6 @@
 	},
 	{
 		"appId": "1850960",
-		"new": true,
 		"subGames": [
 			{
 				"name": "Roomerang",
@@ -308,6 +307,37 @@
 				"name": "Quixort",
 				"description": "In this trivia sorting factory, work with your team to sort falling answers into their proper order before they hit the floor! It's as easy as A, C, B!",
 				"image": "/jb9/quixort.bmp"
+			}
+		]
+	},
+	{
+		"new": true,
+		"appId": "2216830",
+		"subGames": [
+			{
+				"name": "Tee K.O. 2",
+				"description": "Return to T-Shirt Island, where the most hardened warriors in the world compete in a deadly fighting tournament. The drawing finger - not the fist - decides the victory!",
+				"image": "/jb10/teeko2.png"
+			},
+			{
+				"name": "FixyText",
+				"description": "In this chaotic game, everyone's in group chat, typing all at once to make the most memorable statement. And there's no delete key.",
+				"image": "/jb10/fixytext.png"
+			},
+			{
+				"name": "Hypnotorious",
+				"description": "Secret roles, tentative alliances and of course, silly answers to ridiculous questions. Who is on your side?",
+				"image": "/jb10/hypnotorious.png"
+			},
+			{
+				"name": "TimeJinx",
+				"description": "You're a time traveler from the future competing in a high-stakes trivia night. Save your current timeline by answering questions about the past.",
+				"image": "/jb10/timejinx.png"
+			},
+			{
+				"name": "Dodo Re Mi",
+				"description": "Your phone is your instrument. You and your flock must make music together to escape the hungry jungle plant.",
+				"image": "/jb10/dodoremi.png"
 			}
 		]
 	},
