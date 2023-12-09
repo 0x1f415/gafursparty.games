@@ -16,9 +16,7 @@ export default function ParticlesBG() {
 			init={particlesInit}
 			options={{
 				fpsLimit: 120,
-				background: {
-					color: '#000000'
-				},
+				background: {},
 				particles: {
 					color: { value: '#fff' },
 					move: {

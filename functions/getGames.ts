@@ -1,6 +1,9 @@
 import ownedGames from '../games.json';
 import SteamAPI from 'steamapi';
 import { GameDetail } from '../types';
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '.env.local' });
 
 export default async function getGames() {
 	const { STEAM_WEB_KEY } = process.env;

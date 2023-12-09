@@ -18,9 +18,18 @@
 	src: url('/TSBlockBold.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Mystic Gate';
+	src: url('/MysticGate.otf') format('opentype');
+}
+
 body,
 html {
-	background-color: #050505;
+	background-image: url('/fbf.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+
 	font-family: 'Source Sans Pro';
 	color: white;
 	text-align: center;

@@ -26,17 +26,15 @@
 	transform: translateX(-50%);
 
 	.Header {
-		font-family: 'Another Danger';
-		font-weight: normal;
-		background: linear-gradient(90deg, #ff0048, #00f2ff);
-		transform: rotate(-3deg);
-		margin-top: 30px;
-		margin-bottom: 30px;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		font-size: 120px;
-		filter: drop-shadow(5px 5px #41023c);
-		animation: rainbow 18s ease infinite;
+		font-family: 'Mystic Gate';
+		text-transform: uppercase;
+
+		font-size: 80px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: #ff0000;
+
+		text-shadow: 0 0 30px #ff0000;
 	}
 
 	.VoteSection {
@@ -47,7 +45,7 @@
 		margin-bottom: 50px;
 		height: 260px;
 
-		>div {
+		> div {
 			flex: 1;
 		}
 
@@ -60,7 +58,7 @@
 		font-size: 30px;
 		font-family: 'Dirty Roma';
 
-		>p {
+		> p {
 			margin-bottom: 0.5em;
 		}
 
@@ -142,7 +140,7 @@
 			margin-top: 20px !important;
 			height: auto !important;
 
-			>div {
+			> div {
 				width: 100% !important;
 				height: 44vw !important;
 				box-sizing: border-box;
