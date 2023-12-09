@@ -16,45 +16,40 @@ export default function ParticlesBG() {
 			init={particlesInit}
 			options={{
 				fpsLimit: 120,
+				background: {
+					color: '#000000'
+				},
 				particles: {
+					color: { value: '#fff' },
 					move: {
-						speed: 0.5,
-						out_mode: 'out',
-						enable: true
+						direction: 'bottom',
+						enable: true,
+						outModes: 'out',
+						speed: 2
 					},
 					number: {
-						value: 7
-					},
-					line_linked: {
-						enable: false
-					},
-					shape: {
-						type: 'image',
-						image: [
-							{
-								src: '/paw.png',
-								height: 20,
-								width: 20
-							},
-							{
-								src: '/peach.png',
-								height: 20,
-								width: 20
-							}
-						]
-					},
-					color: {
-						value: '#CCC'
-					},
-					size: {
-						value: 15,
-						random: false
+						density: {
+							enable: true,
+							area: 800
+						},
+						value: 100
 					},
 					opacity: {
-						value: 0.1,
-						anim: {
-							enable: false
-						}
+						value: 0.7
+					},
+					shape: {
+						type: 'circle'
+					},
+					size: {
+						value: 10
+					},
+					wobble: {
+						enable: true,
+						distance: 10,
+						speed: 10
+					},
+					zIndex: {
+						value: { min: 0, max: 100 }
 					}
 				}
 			}}
