@@ -311,7 +311,6 @@
 		]
 	},
 	{
-		"new": true,
 		"appId": "2216830",
 		"subGames": [
 			{
@@ -338,6 +337,40 @@
 				"name": "Dodo Re Mi",
 				"description": "Your phone is your instrument. You and your flock must make music together to escape the hungry jungle plant.",
 				"image": "/jb10/dodoremi.png"
+			}
+		]
+	},
+	{
+		"appId": "2948640"
+	},
+	{
+		"new": true,
+		"appId": "3364070",
+		"subGames": [
+			{
+				"name": "Doominate",
+				"description": "Take a perfectly lovely situation and destroy it in this head-to-head joke game where it feels so good to be so bad.",
+				"image": "/jb11/Doominate.avif"
+			},
+			{
+				"name": "Hear Say",
+				"description": "Record sound effects and dialogue directly from your phone in a foley-inspired game where laughter is the soundtrack. Then, watch your voices come to life in a series of short movie clips!",
+				"image": "/jb11/Hearsay.avif"
+			},
+			{
+				"name": "Cookie Haus",
+				"description": "Play our coziest and kookiest drawing game yet by fulfilling cookie design orders for unusual clientele. Don’t play on an empty stomach!",
+				"image": "/jb11/CookieHaus.avif"
+			},
+			{
+				"name": "Suspectives",
+				"description": "There’s been a crime, one player secretly did it, and the evidence comes from your own survey answers! Study the clues, defend your innocence (even if you’re lying), and put your friends on trial.",
+				"image": "/jb11/Suspectives.avif"
+			},
+			{
+				"name": "Legends of Trivia",
+				"description": "Assemble your team and put your trivia knowledge to the test in a fantastical world full of danger! Teamwork! Monsters! Do you dare take on one of the most challenging trivia games yet?",
+				"image": "/jb11/Suspectives.avif"
 			}
 		]
 	},
